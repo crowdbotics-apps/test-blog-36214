@@ -14,9 +14,9 @@ class Post(models.Model):
     content = models.TextField()
     user = models.ForeignKey(
         "users.User",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="post_user",
     )
 
