@@ -12,6 +12,13 @@ class Post(models.Model):
     )
     image = models.TextField()
     content = models.TextField()
+    user = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="post_user",
+    )
 
 
 # Create your models here.
