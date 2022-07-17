@@ -11,9 +11,9 @@ class Like(models.Model):
     )
     user = models.OneToOneField(
         "users.User",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="like_user",
     )
 
