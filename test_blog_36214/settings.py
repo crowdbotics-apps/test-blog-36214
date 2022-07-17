@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "posts",
     "comments",
+    "likes",
 ]
 LOCAL_APPS = [
     "home",

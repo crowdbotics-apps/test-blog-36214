@@ -20,9 +20,9 @@ class Post(models.Model):
         related_name="post_user",
     )
     timestamp = models.DateTimeField(
-        auto_now_add=True,
         null=True,
         blank=True,
+        auto_now_add=True,
     )
 
 
