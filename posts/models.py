@@ -19,6 +19,11 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name="post_user",
     )
+    timestamp = models.DateTimeField(
+        auto_now_add=True,
+        null=True,
+        blank=True,
+    )
 
 
 # Create your models here.
